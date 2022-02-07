@@ -13,7 +13,7 @@ protocol ChangeColorDelegate: AnyObject {
 
 final class SettingColorVC: UIViewController {
     
-    var delegate: ChangeColorDelegate?
+    weak var delegate: ChangeColorDelegate?
         
     @IBOutlet private weak var redSlider: UISlider!
     @IBOutlet private weak var greenSlider: UISlider!
