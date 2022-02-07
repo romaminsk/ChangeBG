@@ -14,6 +14,7 @@
 		E0758F2127B00C76003AF3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0758F2027B00C76003AF3F5 /* Assets.xcassets */; };
 		E0758F2427B00C76003AF3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0758F2227B00C76003AF3F5 /* LaunchScreen.storyboard */; };
 		E0758F2C27B0120F003AF3F5 /* SettingColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0758F2B27B0120F003AF3F5 /* SettingColorVC.swift */; };
+		E0D4638727B14C8D000D04D7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D4638627B14C8D000D04D7 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E0758F2327B00C76003AF3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0758F2527B00C76003AF3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0758F2B27B0120F003AF3F5 /* SettingColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingColorVC.swift; sourceTree = "<group>"; };
+		E0D4638627B14C8D000D04D7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E0758F1727B00C75003AF3F5 /* AppDelegate.swift */,
 				E0758F1927B00C75003AF3F5 /* SceneDelegate.swift */,
 				E0758F1B27B00C75003AF3F5 /* ViewController.swift */,
+				E0D4638627B14C8D000D04D7 /* MainVC.swift */,
 				E0758F2B27B0120F003AF3F5 /* SettingColorVC.swift */,
 				E0758F1D27B00C75003AF3F5 /* Main.storyboard */,
 				E0758F2227B00C76003AF3F5 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0758F1C27B00C75003AF3F5 /* ViewController.swift in Sources */,
+				E0D4638727B14C8D000D04D7 /* MainVC.swift in Sources */,
 				E0758F2C27B0120F003AF3F5 /* SettingColorVC.swift in Sources */,
 				E0758F1827B00C75003AF3F5 /* AppDelegate.swift in Sources */,
 				E0758F1A27B00C75003AF3F5 /* SceneDelegate.swift in Sources */,

@@ -7,17 +7,23 @@
 
 import UIKit
 
-final class SettingColorVC: UIViewController {
+protocol ChangeColorDelegate: AnyObject {
+    func changeColor(color: UIColor)
+}
 
+final class SettingColorVC: UIViewController {
+    
+    var delegate: ChangeColorDelegate?
+        
     @IBOutlet private weak var redSlider: UISlider!
     @IBOutlet private weak var greenSlider: UISlider!
     @IBOutlet private weak var blueSlider: UISlider!
     @IBOutlet private weak var opacitySlider: UISlider!
     @IBOutlet private weak var colorView: UIView!
-    @IBOutlet weak var redTextField: UITextField!
-    @IBOutlet weak var greenTextField: UITextField!
-    @IBOutlet weak var blueTextField: UITextField!
-    @IBOutlet weak var opacityTextField: UITextField!
+    @IBOutlet private weak var redTextField: UITextField!
+    @IBOutlet private weak var greenTextField: UITextField!
+    @IBOutlet private weak var blueTextField: UITextField!
+    @IBOutlet private weak var opacityTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,19 +50,9 @@ final class SettingColorVC: UIViewController {
         updateColor()
     }
 
-    @IBAction private func redField(_ sender: UITextField) {
-    }
-
-    @IBAction private func greenField(_ sender: Any) {
-    }
-
-    @IBAction private func blueField(_ sender: Any) {
-    }
-
-    @IBAction private func opacityField(_ sender: Any) {
-    }
-
-    @IBAction private func doneBtn(_ sender: Any) {
+    @IBAction private func doneBtn(_ sender: UIButton) {
+        delegate?.changeColor(color: colorView.backgroundColor!)
+        _ = navigationController?.popToRootViewController(animated: true)
     }
 
     private func updateColor() {
@@ -84,7 +80,7 @@ final class SettingColorVC: UIViewController {
         opacitySlider.maximumValue = 1
         opacitySlider.value = 0.5
     }
-
+    
     /*
     // MARK: - Navigation
 
